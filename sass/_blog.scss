@@ -1,7 +1,5 @@
 .blog {
-}
-
-.section {
+  background: #ffffff;
 }
 
 .blog__inner {
@@ -20,21 +18,46 @@
 }
 
 .blog-card {
+  border-radius: 4px;
+  box-shadow: 5px 7px 34px 0px #f1f1f1;
+  padding: 12px 15px 16px;
 }
 
 .blog__image {
+  position: relative;
+  width: 330px;
 }
 
 .blog__tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  background: #2392db;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: calc(17px / 12px);
+  padding: 3px 32px;
 }
 
 .blog__text-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .blog__title {
+  color: #333333;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .blog__sub-title {
+  color: #333333;
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .blog__button {
