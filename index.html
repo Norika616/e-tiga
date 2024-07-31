@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 検索にヒットさせない -->
+    <meta name="robots" content="noindex" />
+
+    <!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>e-tiga</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="header__inner">
+          <h1 class="header__logo">
+            <a href="#"
+              ><img
+                src="./img/header-logo.png"
+                width="320"
+                height="64"
+                alt="e-tiga"
+            /></a>
+          </h1>
+          <!-- pc -->
+          <nav class="header__nav" aria-label="ナビゲーションメニュー">
+            <a href="#concept" class="header__link">e-tigaとは</a>
+            <a href="#cta" class="header__link">ご利用の流れ</a>
+            <a href="#price" class="header__link">プラン</a>
+            <a href="#company" class="header__link">運営会社</a>
+          </nav>
+          <!-- sp -->
+          <button
+            id="js-drawer-icon"
+            class="header__open drawer-icon"
+            aria-label="ドロワーボタン"
+          >
+            <span class="drawer-icon__bar"></span>
+            <span class="drawer-icon__bar"></span>
+            <span class="drawer-icon__bar"></span>
+          </button>
+          <div id="js-drawer-content" class="drawer-content">
+            <h2 class="drawer-logo">
+              <a href="#"
+                ><img
+                  src="./img/sp/logo-white-sp.png"
+                  alt="e-tigaのロゴ"
+                  width="180"
+                  height="36"
+              /></a>
+            </h2>
+            <nav
+              class="drawer-content__menu"
+              aria-label="ナビゲーションメニュー"
+            >
+              <a href="#concept" class="drawer-content__link">e-tigaとは</a>
+              <a href="#cta" class="drawer-content__link">ご利用の流れ</a>
+              <a href="#price" class="drawer-content__link">プラン</a>
+              <a href="#company" class="drawer-content__link">運営会社</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- / header -->
+
+      <!-- first view -->
+      <div class="first-view">
+        <div class="first-view__inner">
+          <div class="first-view__image">
+            <picture
+              ><source
+                media="(min-width:768px )"
+                srcset="./img/first-view.png" />
+              <img src="./img/first-view.png" alt="" width="398" height="285"
+            /></picture>
+          </div>
+          <div class="first-view__content">
+            <h2 class="first-view__logo">
+              <a href=""
+                ><img
+                  src="./img/fv-logo.png"
+                  alt="e-tiga"
+                  width="250"
+                  height="50"
+              /></a>
+            </h2>
+            <div class="first-view__lead">会社の「チーム力」を強化する</div>
+            <p class="first-view__text">
+              誰でも簡単らくらくに、<br />
+              スケジュールや名刺をデジタル化。<br />
+              チームの管理をよりスピーディーに円滑にします。
+            </p>
+            <div class="first-view__button">
+              <a href="#" class="button-group1 button-primary">無料で登録</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / first view -->
+    </div>
+
+    <!-- news -->
+    <section class="news section">
+      <div class="news__inner">
+        <div class="news__heading">
+          <h3 class="heading1">NEWS<span class="heading-bar"></span></h3>
+        </div>
+
+        <div class="news__cards">
+          <a href="#" class="news__card news-card">
+            <time datetime="2022-12-15" class="news__meta">2022年12月15日</time>
+            <div class="news__title">年末年始について</div>
+          </a>
+          <a href="#" class="news__card news-card">
+            <time datetime="2022-12-10" class="news__meta">2022年12月10日</time>
+            <div class="news__title">
+              チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。
+            </div>
+          </a>
+          <a href="#" class="news__card news-card">
+            <time datetime="2022-09-01" class="news__meta">2022年9月1日</time>
+            <div class="news__title">
+              商談効率アップ！セミナーを開催します。
+            </div>
+          </a>
+          <a href="#" class="news__card news-card">
+            <time datetime="2022-08-01" class="news__meta">2022年8月1日</time>
+            <div class="news__title">営業時間の変更について</div>
+          </a>
+          <a href="" class="news__card news-card">
+            <time datetime="2022-06-01" class="news__meta">2022年6月1日</time>
+            <div class="news__title">e-tiga出張無料体験会を実施致します。</div>
+          </a>
+        </div>
+        <div class="news__pagination">
+          <div class="pagination">
+            <a href="#" class="arrow-icon"
+              ><img
+                src="./img/news-arrow-icon.svg"
+                width="13"
+                height="10"
+                alt="戻る"
+            /></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#" class="arrow-icon next"
+              ><img
+                src="./img/news-arrow-icon.svg"
+                width="13"
+                height="10"
+                alt="次へ"
+            /></a>
+          </div>
+          <div class="news__link">
+            <a href="" class="news-link__button">全てみる</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / news -->
+
+    <!-- concept -->
+    <div id="concept" class="concept section">
+      <div class="concept__inner">
+        <div class="concept__image">
+          <img
+            src="./img/concept-img.png"
+            width="450"
+            height="436"
+            alt="パソコンとスマートフォンの画像"
+          />
+        </div>
+        <div class="concept__bottom">
+          <div class="concept__lead">
+            名刺作成から、<br />
+            スケジュール管理、<br />
+            経理までを簡単スピーディーに。
+          </div>
+          <p class="concept__text">
+            誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、
+          </p>
+          <div class="concept__button">
+            <a href="#" class="button-group1 button-primary"
+              >詳細・できることへ</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / concept -->
+
+    <!-- case study -->
+    <section class="case-study section">
+      <div class="case-study__inner">
+        <div class="case-study__heading">
+          <h3 class="heading2">
+            <span class="heading-en">CASESTUDY</span>
+            <span class="heading-ja">お客様の声</span>
+          </h3>
+        </div>
+
+        <div class="case-study__slider">
+          <!-- Slider main container -->
+          <div class="swiper case-study__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper case-study__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image">
+                    <img
+                      src="./img/case-study1.jpg"
+                      width="320"
+                      height="214"
+                      alt=""
+                    />
+                  </div>
+                  <div class="case-study__text-box">
+                    <p class="case-study__text">
+                      在宅でも団結したチームワークに。
+                    </p>
+                    <p class="case-study__company">
+                      〇〇株式会社<span class="name">吉本様</span>
+                    </p>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image">
+                    <img
+                      src="./img/case-study2.jpg"
+                      width="320"
+                      height="214"
+                      alt=""
+                    />
+                  </div>
+                  <div class="case-study__text-box">
+                    <p class="case-study__text">
+                      1日2時間分の処理時間の削減に成功
+                    </p>
+                    <p class="case-study__company">
+                      〇〇株式会社<span class="name">竹内様</span>
+                    </p>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image">
+                    <img
+                      src="./img/case-study3.jpg"
+                      width="320"
+                      height="214"
+                      alt=""
+                    />
+                  </div>
+                  <div class="case-study__text-box">
+                    <p class="case-study__text">導入から1年で残業0へ。</p>
+                    <p class="case-study__company">
+                      〇〇株式会社<span class="name">三島様</span>
+                    </p>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination case-study__pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev case-study__prev"></div>
+            <div class="swiper-button-next case-study__next"></div>
+          </div>
+        </div>
+        <div class="case-study__button">
+          <a href="#" class="button-group2 button-large">全てみる</a>
+        </div>
+      </div>
+    </section>
+    <!-- / case study -->
+
+    <!-- price -->
+    <section id="price" class="price section">
+      <div class="price__inner">
+        <div class="price__head">
+          <h3 class="heading2">
+            <span class="title">PRICE</span>
+            <span class="sub-title">料金</span>
+          </h3>
+        </div>
+        <div class="price__cards">
+          <div class="price__card price-card">
+            <div class="price-card--plan">
+              <p class="plan__title">ライトプラン</p>
+              <div class="plan__cost-box">
+                <p class="plan__cost">無料</p>
+              </div>
+            </div>
+            <div class="price__details">
+              <div class="price__details-row">
+                <span class="price__details-label">人数</span>
+                <span class="price__details-value">3人</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">電話サポート</span>
+                <span class="price__details-value">なし</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">名刺作成</span>
+                <span class="price__details-value">月2枚まで</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート1</span>
+                <span class="price__details-value">なし</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート2</span>
+                <span class="price__details-value">なし</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート3</span>
+                <span class="price__details-value">なし</span>
+              </div>
+            </div>
+            <div class="price-card__button">
+              <a href="#" class="button-group1 button-primary">お申し込み</a>
+            </div>
+          </div>
+          <div class="price__card price-card">
+            <div class="price-card--plan">
+              <p class="plan__title">スタンダードプラン</p>
+              <div class="plan__cost-box">
+                <p class="plan__cost-small">月</p>
+                <p class="plan__cost">980</p>
+                <p class="plan__cost-small">円</p>
+              </div>
+            </div>
+            <div class="price__details">
+              <div class="price__details-row">
+                <span class="price__details-label">人数</span>
+                <span class="price__details-value">20人</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">電話サポート</span>
+                <span class="price__details-value">なし</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">名刺作成</span>
+                <span class="price__details-value">月15枚まで</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート1</span>
+                <span class="price__details-value">あり</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート2</span>
+                <span class="price__details-value">なし</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート3</span>
+                <span class="price__details-value">なし</span>
+              </div>
+            </div>
+            <div class="price-card__button">
+              <a href="#" class="button-group1 button-primary">お申し込み</a>
+            </div>
+          </div>
+          <div class="price__card price-card">
+            <div class="price-card--plan">
+              <p class="plan__title">プロプラン</p>
+              <div class="plan__cost-box">
+                <p class="plan__cost-small">月</p>
+                <p class="plan__cost">2,480</p>
+                <p class="plan__cost-small">円</p>
+              </div>
+            </div>
+            <div class="price__details">
+              <div class="price__details-row">
+                <span class="price__details-label">人数</span>
+                <span class="price__details-value">無制限</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">電話サポート</span>
+                <span class="price__details-value">無制限</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">名刺作成</span>
+                <span class="price__details-value">無制限</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート1</span>
+                <span class="price__details-value">あり</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート2</span>
+                <span class="price__details-value">あり</span>
+              </div>
+              <div class="price__details-row">
+                <span class="price__details-label">サポート3</span>
+                <span class="price__details-value">あり</span>
+              </div>
+            </div>
+            <div class="price-card__button">
+              <a href="#" class="button-group1 button-primary">お申し込み</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / price -->
+
+    <!-- company -->
+    <!-- / company -->
+
+    <!-- cta -->
+    <div id="cta" class="cta">
+      <div class="cta__inner">
+        <p class="cta__title">まずは無料お試し</p>
+        <p class="cta__sub-title">ライトプランなら無料でお使いいただけます。</p>
+        <div class="cta_button">
+          <a href="#" class="button-group1 button-secondary">お申し込み</a>
+        </div>
+      </div>
+    </div>
+    <!-- / cta -->
+
+    <!-- blog -->
+    <section class="blog section">
+      <div class="blog__inner">
+        <div class="blog__head">
+          <h3 class="heading2">
+            <span class="title">BLOG</span>
+            <span class="sub-title">ブログ</span>
+          </h3>
+        </div>
+
+        <!-- blogコンテンツ部分 -->
+        <div class="blog__cards">
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img1.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img2.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img3.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img4.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img5.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="blog__card blog-card">
+            <div class="blog__image">
+              <img
+                src="./img/blog-img6.jpg"
+                alt="ブログの画像"
+                width="1500"
+                height="1000"
+              />
+              <div class="blog__tag">ラベル</div>
+            </div>
+            <div class="blog__text-box">
+              <p class="blog__title">タイトルタイトル</p>
+              <p class="blog__sub-title">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__button">
+          <a href="#" class="button-group1 button-primary">ブログ一覧へ</a>
+        </div>
+      </div>
+    </section>
+    <!-- / blog -->
+
+    <!-- seminar -->
+    <section class="seminar section">
+      <div class="seminar__inner">
+        <div class="seminar__head">
+          <h3 class="heading2">
+            <span class="heading-en">SEMINAR</span>
+            <span class="heading-ja">セミナー</span>
+          </h3>
+        </div>
+        <div class="seminar__cards">
+          <div class="seminar__card">
+            <div class="seminar-card">
+              <div class="seminar-card__content">
+                <div class="seminar-card__image">
+                  <img
+                    src="./img/seminar-img.jpg"
+                    alt="マーケティングセミナーの画像"
+                    width="1500"
+                    height="1000"
+                  />
+                </div>
+                <div class="seminar-card__body">
+                  <div class="seminar-card__info">
+                    <div class="seminar-card__label">開催日</div>
+                    <time datetime="2024-02-08" class="seminar-card__date"
+                      >2024.02.08</time
+                    >
+                  </div>
+                  <h4 class="seminar-card__title">
+                    マーケティングセミナーを開催します。
+                  </h4>
+                  <p class="seminar-card__text">
+                    ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。
+                  </p>
+                  <div class="seminar-card__button">
+                    <a href="#" class="button-group2 button-medium"
+                      >詳細を見る</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seminar__card">
+            <div class="seminar-card">
+              <div class="seminar-card__content">
+                <div class="seminar-card__image">
+                  <img
+                    src="./img/seminar-img.jpg"
+                    alt="マーケティングセミナーの画像"
+                    width="1500"
+                    height="1000"
+                  />
+                </div>
+                <div class="seminar-card__body">
+                  <div class="seminar-card__info">
+                    <div class="seminar-card__label">開催日</div>
+                    <time datetime="2024-02-08" class="seminar-card__date"
+                      >2024.02.08</time
+                    >
+                  </div>
+                  <h4 class="seminar-card__title">
+                    マーケティングセミナーを開催します。
+                  </h4>
+                  <p class="seminar-card__text">
+                    ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。
+                  </p>
+                  <div class="seminar-card__button">
+                    <a href="#" class="button-group2 button-medium"
+                      >詳細を見る</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seminar__card">
+            <div class="seminar-card">
+              <div class="seminar-card__content">
+                <div class="seminar-card__image">
+                  <img
+                    src="./img/seminar-img.jpg"
+                    alt="マーケティングセミナーの画像"
+                    width="1500"
+                    height="1000"
+                  />
+                </div>
+                <div class="seminar-card__body">
+                  <div class="seminar-card__info">
+                    <div class="seminar-card__label">開催日</div>
+                    <time datetime="2024-02-08" class="seminar-card__date"
+                      >2024.02.08</time
+                    >
+                  </div>
+                  <h4 class="seminar-card__title">
+                    マーケティングセミナーを開催します。
+                  </h4>
+                  <p class="seminar-card__text">
+                    ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。
+                  </p>
+                  <div class="seminar-card__button">
+                    <a href="#" class="button-group2 button-medium"
+                      >詳細を見る</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- / seminar -->
+
+    <!-- q and a -->
+     <section class="qa section">
+
+     </section>
+    <!-- / q and a -->
+  </body>
+</html>

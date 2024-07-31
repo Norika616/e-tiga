@@ -1,0 +1,111 @@
+@use "variable" as var;
+
+.wrapper {
+  padding: 20px;
+  background: lightblue;
+}
+
+.border {
+  margin-block: 50px;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+// ボタン
+.button-group1 {
+  display: inline-block;
+  box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var.$color-white-light;
+}
+
+.button-primary {
+  padding: 9px 54px;
+  border-radius: 48px;
+  background: linear-gradient(90deg, #2188de 1.75%, #2bcbc6 97.75%);
+}
+
+// secondaryの背景色はcvの背景色と同じ
+.button-secondary {
+  padding: calc(9px - 2px) calc(54px - 2px);
+  border-radius: 50px;
+  border: 2px solid #fff;
+}
+
+.button-group2 {
+  color: var.$color-accent;
+  border-radius: 2px;
+  border: 1px solid #2392db;
+  background: var.$color-white;
+}
+
+.button-small {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: calc(5px - 1px) calc(24px - 1px);
+  box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
+}
+
+.button-medium {
+  font-size: 14px;
+  font-weight: 500;
+  padding: calc(8px - 1px) calc(44px - 1px);
+  box-shadow: 5px 7px 34px 0px #f1f1f1;
+}
+
+.button-large {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 9px 54px;
+  box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
+}
+
+// 見出し
+.heading1 {
+  text-align: center;
+  font-family: var.$font-family-en;
+  color: #238fdc;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding-bottom: calc(6px + 3px);
+  position: relative;
+}
+
+.heading-bar {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #2bc8c8;
+}
+
+.heading2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.heading-en {
+  color: #228ddd;
+  font-family: var.$font-family-en;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-indent: 3.6px;
+}
+
+.heading-ja {
+  color: #228bde;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.66px;
+  text-indent: 2.66px;
+}

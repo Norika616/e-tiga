@@ -1,0 +1,35 @@
+// 基本色
+$color-white: #ffffff; // 背景色やテキストの基本色
+$color-black: #111111; // 主にテキストや重要な要素の色
+$color-dark-gray: #333333; // 見出しや強調テキストの色
+$color-medium-gray: #707070; // 通常のテキストやサブテキストの色
+$color-light-gray: #9d9d9d; // プレースホルダーや非アクティブな要素の色
+$color-white-light: #f6f7f7; // 背景色として使う明るい色
+
+// アクセント色
+$color-accent: #2392db; // 主なブランドカラーやボタンの色
+$color-primary-hover: #228ddd; // ボタンやリンクのホバー時の色
+
+// フォント
+$font-family-en: "Montserrat", sans-serif;
+
+// スムーススクロール
+html {
+  scroll-behavior: smooth;
+}
+
+// body
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.section {
+  padding-block: 60px;
+}
+
+img {
+  display: block;
+}
