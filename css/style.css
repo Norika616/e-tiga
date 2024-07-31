@@ -12,6 +12,10 @@ body {
   padding-block: 60px;
 }
 
+.content {
+  margin-top: 46px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -314,6 +318,20 @@ img {
   padding-bottom: 3px;
 }
 
+.blog__inner {
+  padding-inline: 30px 38px;
+}
+
+.blog__cards {
+  display: grid;
+  gap: 16px;
+}
+
+.blog__button {
+  margin-top: 46px;
+  text-align: center;
+}
+
 .seminar {
   background: #fff;
 }
@@ -327,7 +345,6 @@ img {
 }
 
 .seminar__cards {
-  margin-top: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
