@@ -1,4 +1,7 @@
+@use "variable" as var;
+
 .news {
+  background: #ffffff;
 }
 
 .news__inner {
@@ -11,9 +14,6 @@
 .news__cards {
   display: flex;
   flex-direction: column;
-}
-
-.content {
 }
 
 .news__card {
@@ -50,13 +50,47 @@
   gap: 20px;
 }
 
+.arrow-icon,
+.number {
+  border: 1px solid #828282;
+  background: #ffffff;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s, color 0.5s, stroke 0.5s;
+
+  // ホバー時の色
+  &:hover {
+    background: #228ddd;
+    border: none;
+    color: #ffffff;
+
+    .path-color {
+      stroke: #ffffff;
+    }
+  }
+}
+
 .arrow-icon {
 }
 
+.path-color {
+  stroke: #828282;
+}
+
 .next {
-    img{
-        transform: rotate(180deg);
-    }
+  transform: rotate(180deg);
+}
+
+.number {
+  color: #707070;
+  font-family: var.$font-family-en;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+  text-indent: 1.44px;
 }
 
 .news__button {

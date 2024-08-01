@@ -1,0 +1,40 @@
+.concept {
+  background: #f4fbff;
+}
+
+.concept__inner {
+  padding-inline: 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-rows: 310px 1fr;
+}
+
+.concept__image {
+  margin-inline: auto;
+  img {
+    width: 310px;
+  }
+}
+
+.concept__bottom {
+}
+
+.concept__lead {
+  color: #228ddd;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.concept__text {
+  margin-top: 30px;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.concept__button {
+  margin-top: 30px;
+  padding: 4px 3px;
+  text-align: center;
+}
