@@ -1,0 +1,129 @@
+.qa {
+  background: #f4fbff;
+}
+
+.qa__inner {
+  padding-inline: 15px;
+}
+
+.qa__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qa__box {
+}
+
+.qa-box {
+}
+
+.js-details {
+}
+
+.qa-box__head {
+  /* Chrome/Firefox/Edge */
+  list-style: none;
+
+  /* Safari/Opera */
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.js-content {
+}
+
+.qa-box__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-block: 10px;
+  background: #ffffff;
+}
+
+.qa-box__head-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  background: #238fdc;
+}
+
+.qa-box__head-text {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: calc(50px + 10px);
+}
+
+.qa-box__button {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #2392db;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.qa-box[open] {
+  .qa-box__button::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 0.3s;
+
+    // 要素が回転したあと消える
+    @keyframes fadeout {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.qa__body {
+  margin-top: 12px;
+  margin-left: calc(35px - 15px);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.qa-box__a {
+}
+
+.qa-box__a-text {
+  padding: 10px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+}

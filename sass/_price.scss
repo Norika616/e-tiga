@@ -1,0 +1,87 @@
+.price {
+  background: #f4fbff;
+}
+
+.price__inner {
+  padding-inline: 30px;
+}
+
+.price__head {
+}
+
+.price__cards {
+  display: grid;
+  gap: 30px;
+  place-content: center;
+  grid-template-columns: 300px;
+}
+
+.price__card {
+}
+
+.price-card {
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 30px 20px;
+}
+
+.price-card--plan {
+}
+
+.plan__title {
+  color: #2392db;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(29px / 20px);
+  text-align: center;
+}
+
+.plan__cost-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.plan__cost {
+  margin-top: 10px;
+  color: #2392db;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: 3.6px;
+  text-indent: 3.6px;
+  text-align: center;
+}
+
+.plan__cost-small {
+  margin-bottom: 4px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.price__details {
+  margin-top: 30px;
+}
+
+.price__details-row {
+  border-bottom: 1px solid #c2c2c2;
+  padding-inline: 12px;
+  padding-block: 6px calc(6px - 1px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__details-label,
+.price__details-value {
+  color: #333333;
+  font-weight: 400;
+}
+
+.price-card__button {
+  margin-top: 30px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  text-align: center;
+}
