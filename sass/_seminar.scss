@@ -31,8 +31,10 @@
 
 .seminar-card__image {
   margin-inline: auto;
-  width: 324px;
+  max-width: 324px;
+
   img {
+    width: 324px;
   }
 }
 
@@ -53,7 +55,6 @@
   background: #2392db;
   color: #ffffff;
   padding: 6px 12px;
-
 }
 
 .seminar-card__date {

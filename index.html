@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
 
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- css -->
     <link
       rel="stylesheet"
@@ -233,6 +238,25 @@
             <span class="heading-ja">お客様の声</span>
           </h3>
         </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
         <div class="case-study__button">
           <a href="#" class="button-group2 button-large">全てみる</a>
         </div>
@@ -379,13 +403,109 @@
             <span class="heading-ja">会社概要</span>
           </h3>
         </div>
-        <nav class="company__tabs">
-          <ul>
-            <li class="company__tab active" data-tab="tab__content01">会社概要</li>
-            <li class="company__tab" data-tab="tab__content01">沿革</li>
-            <li class="company__tab" data-tab="tab__content01">認証取得</li>
+        <nav class="company__tab--list content">
+          <ul class="company__tabs">
+            <li class="company__tab active" data-tab="tab__content01">
+              <div class="company__tab--icon">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path
+                    d="M6.81622 2L4.34324 4L1.87027 2"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+              <div class="company__tab--name">会社概要</div>
+            </li>
+            <li class="company__tab" data-tab="tab__content02">
+              <div class="company__tab--icon">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path
+                    d="M6.81622 2L4.34324 4L1.87027 2"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+              <div class="company__tab--name">沿革</div>
+            </li>
+            <li class="company__tab" data-tab="tab__content03">
+              <div class="company__tab--icon">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path
+                    d="M6.81622 2L4.34324 4L1.87027 2"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </div>
+              <div class="company__tab--name">認証取得</div>
+            </li>
           </ul>
         </nav>
+        <div class="tab__content active details" id="tab__content01">
+          <p class="company-about__title">会社概要</p>
+          <p class="company-about__sub-title">ここに会社概要が入ります。</p>
+
+          <dl>
+            <dt>会社名</dt>
+            <dd>株式会社e-tiga</dd>
+            <dt>資本金</dt>
+            <dd>1000万円</dd>
+            <dt>本社所在地</dt>
+            <dd>東京都〇〇区〇〇　〇〇ビル4階</dd>
+            <dt>創業</dt>
+            <dd>2018年7月10日</dd>
+            <dt>代表社員</dt>
+            <dd>田中　太郎</dd>
+          </dl>
+        </div>
+        <div class="tab__content history" id="tab__content02">
+          <div class="company-history__box">
+            <div class="company-history__head">
+              <div class="company-history__dot"></div>
+              <div class="company-history__meta">2021年4月</div>
+            </div>
+            <p class="company-history__text">株式会社e-tiga設立</p>
+          </div>
+          <div class="company-history__box">
+            <div class="company-history__head">
+              <div class="company-history__dot"></div>
+              <div class="company-history__meta">2021年12月</div>
+            </div>
+            <p class="company-history__text">e-tigaリリース</p>
+          </div>
+          <div class="company-history__box">
+            <div class="company-history__head">
+              <div class="company-history__dot"></div>
+              <div class="company-history__meta">2022年3月</div>
+            </div>
+            <p class="company-history__text">導入企業1,000社突破</p>
+          </div>
+          <div class="company-history__box">
+            <div class="company-history__head">
+              <div class="company-history__dot"></div>
+              <div class="company-history__meta">2022年10月</div>
+            </div>
+            <p class="company-history__text">導入企業2,000社を突破</p>
+          </div>
+          <div class="company-history__box">
+            <div class="company-history__head">
+              <div class="company-history__dot"></div>
+              <div class="company-history__meta">2023年9月</div>
+            </div>
+            <p class="company-history__text">事務所を渋谷に移転</p>
+          </div>
+        </div>
+        <div class="tab__content certify" id="tab__content03">
+          <p class="company-certify__title">〇〇◎1111認証取得</p>
+          <p class="company-certify__text">
+            国際規格である〇〇
+            認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇
+            認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇
+            認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。
+          </p>
+        </div>
       </div>
     </section>
     <!-- / company -->
@@ -725,7 +845,7 @@
       </div>
     </section>
     <!-- / q and a -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/faq.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -479,10 +479,6 @@ img {
   text-align: center;
 }
 
-.company {
-  background: #ffffff;
-}
-
 .company__inner {
   padding-inline: 15px;
 }
@@ -491,81 +487,123 @@ img {
   padding-left: 15px;
 }
 
-.profile__nav {
+.company__tab--list {
   margin-bottom: -22px;
 }
 
-.profile__nav-list {
+.company__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.profile__nav-item {
+.company__tab {
+  position: relative;
   cursor: pointer;
-  padding: 10px 30px;
-  color: #2392db;
   background: #ffffff;
+  padding: 10px 30px;
+  min-width: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.company__tab:nth-of-type(2) {
+  border-right: 1px solid #2392db;
+}
+
+.company__tab--icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.company__tab--icon svg {
+  stroke: #2392db;
+}
+
+.company__tab.active {
+  background: #2392db;
+}
+.company__tab.active .company__tab--icon svg {
+  stroke: white;
+}
+.company__tab.active .company__tab--name {
+  color: #ffffff;
+}
+
+.company__tab:hover .company__tab--icon {
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+.company__tab--name {
+  color: #2392db;
   font-weight: 700;
 }
 
-.profile__content--details,
-.profile__content--history,
-.profile__content--certify {
+.tab__content {
   display: none;
 }
-.profile__content--details.active,
-.profile__content--history.active,
-.profile__content--certify.active {
+.tab__content.active {
   display: block;
-  border: 2px solid #2392db;
+}
+.tab__content.details, .tab__content.history, .tab__content.certify {
   background: #ffffff;
-}
-
-.profile__content--details {
-  padding: 50px 40px 60px;
-  text-align: center;
-}
-.profile__content--details dl {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.profile__content--details dt,
-.profile__content--details dd {
-  color: #333333;
-  border: 1px solid #dbdbdb;
-  padding-top: 13px;
-  padding-bottom: 12px;
-}
-.profile__content--details dt {
-  font-weight: 700;
-  background: #f2f2f2;
-}
-.profile__content--details dd {
-  text-align: left;
-  padding-left: 10px;
+  border: 2px solid #2392db;
 }
 
 .company-about__title {
-  color: #333333;
+  text-align: center;
+  color: #333;
   font-size: 22px;
   font-weight: 700;
 }
 
 .company-about__sub-title {
   margin-top: 20px;
-  color: #333333;
+  text-align: center;
+  color: #333;
   font-weight: 400;
 }
 
-.profile__content--history {
+.details {
+  padding: 60px 40px 50px;
+}
+.details dl {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.details dt,
+.details dd {
+  color: #333;
+  border: 1px solid #dbdbdb;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+.details dt {
+  text-align: center;
+  background: #f2f2f2;
+}
+.details dd {
+  padding-left: 10px;
+}
+
+.history {
   padding-block: 44px 122px;
   padding-left: 30px;
 }
@@ -612,19 +650,20 @@ img {
   padding-left: 17px;
 }
 
-.profile__content--certify {
+.certify {
   padding: 58px 30px 168px;
 }
 
-.certify__title {
+.company-certify__title {
   color: #2392db;
   font-weight: 700;
 }
 
-.certify__text {
+.company-certify__text {
   margin-top: 14px;
-  color: #333333;
+  color: #333;
   font-weight: 400;
+  min-width: 338px;
 }
 
 .price {
@@ -843,8 +882,12 @@ img {
 
 .seminar-card__image {
   margin-inline: auto;
+  max-width: 324px;
+}
+.seminar-card__image img {
   width: 324px;
 }
+
 .seminar-card__body {
   margin-top: 22px;
 }

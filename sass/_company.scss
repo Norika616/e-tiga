@@ -1,5 +1,4 @@
 .company {
-  background: #ffffff;
 }
 
 .section {
@@ -13,44 +12,102 @@
   padding-left: 15px;
 }
 
-.company__profile {
-}
-
-.profile__nav {
+.company__tab--list {
   margin-bottom: -22px;
 }
 
-.profile__nav-list {
+.company__tabs {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.profile__nav-item {
+.company__tab {
+  position: relative;
   cursor: pointer;
-  padding: 10px 30px;
-  color: #2392db;
   background: #ffffff;
+  padding: 10px 30px;
+  min-width: calc(64px + 30px * 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-of-type(2) {
+    border-right: 1px solid #2392db;
+  }
+}
+
+.company__tab--icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+  svg {
+    stroke: #2392db;
+  }
+}
+
+.company__tab {
+  &.active {
+    background: #2392db;
+    .company__tab--icon {
+      svg {
+        stroke: white;
+      }
+    }
+
+    .company__tab--name {
+      color: #ffffff;
+    }
+  }
+}
+
+// hoverしたときのアイコンの動き
+.company__tab {
+  &:hover {
+    .company__tab--icon {
+      transform: translateY(-30%);
+    }
+  }
+}
+
+.company__tab--name {
+  color: #2392db;
   font-weight: 700;
 }
 
-// 各タブの共通スタイル
-.profile__content--details,
-.profile__content--history,
-.profile__content--certify {
+.tab__content {
   display: none;
 
   &.active {
     display: block;
-    border: 2px solid #2392db;
+  }
+
+  &.details,
+  &.history,
+  &.certify {
     background: #ffffff;
+    border: 2px solid #2392db;
   }
 }
 
 // 会社概要
-.profile__content--details {
-  padding: 50px 40px 60px;
+.company-about__title {
   text-align: center;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.company-about__sub-title {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+}
+
+.details {
+  padding: 60px 40px 50px;
 
   dl {
     margin-top: 20px;
@@ -60,37 +117,24 @@
 
   dt,
   dd {
-    color: #333333;
+    color: #333;
     border: 1px solid #dbdbdb;
     padding-top: calc(15px - 2px);
     padding-bottom: calc(14px - 2px);
   }
 
   dt {
-    font-weight: 700;
+    text-align: center;
     background: #f2f2f2;
   }
 
   dd {
-    text-align: left;
     padding-left: 10px;
   }
 }
 
-.company-about__title {
-  color: #333333;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.company-about__sub-title {
-  margin-top: 20px;
-  color: #333333;
-  font-weight: 400;
-}
-
 // 沿革
-.profile__content--history {
+.history {
   padding-block: 44px 122px;
   padding-left: 30px;
 }
@@ -130,18 +174,18 @@
 }
 
 // 認証取得
-
-.profile__content--certify {
+.certify {
   padding: 58px 30px 168px;
 }
 
-.certify__title {
+.company-certify__title {
   color: #2392db;
   font-weight: 700;
 }
 
-.certify__text {
+.company-certify__text {
   margin-top: 14px;
-  color: #333333;
+  color: #333;
   font-weight: 400;
+  min-width: 338px;
 }
