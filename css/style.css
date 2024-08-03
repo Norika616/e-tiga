@@ -83,7 +83,7 @@ img {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 9px 54px;
+  padding: 8px 53px;
   -webkit-box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
 }
@@ -437,7 +437,6 @@ img {
 
 .news__button {
   margin-top: 30px;
-  padding: 4px 3px;
   text-align: center;
 }
 
@@ -589,8 +588,7 @@ img {
 .case-study__button {
   margin-top: 30px;
   text-align: center;
-  padding-top: 4px;
-  padding-bottom: 3px;
+  padding-block: 4px;
 }
 
 .company__inner {
