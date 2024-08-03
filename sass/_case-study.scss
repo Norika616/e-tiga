@@ -1,1 +1,110 @@
+.case-study {
+  background: #ffffff;
+}
 
+.case-study__inner {
+  padding-left: 20px;
+}
+
+.case-study__heading {
+  padding-left: 10px;
+}
+
+.case-study__slider {
+  margin-top: 50px;
+}
+
+.case-study__swiper {
+  padding-bottom: calc(30px + 12px);
+}
+
+.case-study__slide {
+}
+
+.case-study__card {
+}
+
+.case-study__image {
+  img {
+  }
+}
+
+.case-study__text--box {
+  padding: 14px 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-study__text--head {
+  color: #228ddd;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.case-study__name {
+  display: flex;
+  gap: 10px;
+}
+
+.case-study__company--name,
+.case-study__customer--name {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.case-study__industry {
+  color: #9d9d9d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+// ページネーションのカスタマイズ
+.case-study__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  bottom: 0 !important;
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin-inline: 0 !important;
+    // 非アクティブのとき
+    background: #e1e1e1;
+    opacity: 1;
+
+    // アクティブのとき
+    &.swiper-pagination-bullet-active {
+      background: #2f7dc8;
+    }
+  }
+}
+
+// 前へ・次へボタンのカスタマイズ
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  width: 44px;
+  height: 44px;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/prev-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-button-next {
+}
+
+.swiper-scrollbar {
+}
+
+.case-study__button {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 3px;
+}

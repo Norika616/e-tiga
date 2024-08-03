@@ -238,25 +238,62 @@
             <span class="heading-ja">お客様の声</span>
           </h3>
         </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+        <div class="case-study__slider">
+          <!-- Slider main container -->
+          <div class="swiper case-study__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image"><img src="./img/case-study1.jpg" width="1920" height="1440" alt="パソコンの画面を見ている人" /></div>
+                  <div class="case-study__text--box">
+                    <p class="case-study__text--head">在宅でも団結したチームワークに。</p>
+                    <div class="case-study__name">
+                      <span class="case-study__company--name">〇〇株式会社</span>
+                      <span class="case-study__customer--name">吉本様</span>
+                    </div>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image"><img src="./img/case-study2.jpg" width="1920" height="1440" alt="メモをとりながら話し合いをしている2人" /></div>
+                  <div class="case-study__text--box">
+                    <p class="case-study__text--head">1日2時間分の処理時間の削減に成功</p>
+                    <div class="case-study__name">
+                      <span class="case-study__company--name">〇〇株式会社</span>
+                      <span class="case-study__customer--name">竹内様</span>
+                    </div>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide case-study__slide">
+                <div class="case-study__card">
+                  <div class="case-study__image"><img src="./img/case-study3.jpg" width="1920" height="1440" alt="4人でパソコンを見ながら話し合いをしている" /></div>
+                  <div class="case-study__text--box">
+                    <p class="case-study__text--head">導入から1年で残業0へ。</p>
+                    <div class="case-study__name">
+                      <span class="case-study__company--name">〇〇株式会社</span>
+                      <span class="case-study__customer--name">三島様</span>
+                    </div>
+                    <p class="case-study__industry">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination case-study__pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
+
         <div class="case-study__button">
           <a href="#" class="button-group2 button-large">全てみる</a>
         </div>
@@ -845,7 +882,7 @@
       </div>
     </section>
     <!-- / q and a -->
-    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
