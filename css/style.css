@@ -496,7 +496,16 @@ img {
 }
 
 .case-study__swiper {
+  padding-left: 8px;
   padding-bottom: 42px;
+}
+
+.case-study__card {
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-filter: drop-shadow(5px 7px 34px #f1f1f1);
+          filter: drop-shadow(5px 7px 34px #f1f1f1);
+  width: 320px !important;
 }
 
 .case-study__text--box {
@@ -558,17 +567,23 @@ img {
   background: #2f7dc8;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
+.swiper-button-prev,
+.swiper-button-next {
   width: 44px;
   height: 44px;
 }
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
 
 .swiper-button-prev {
-  background-image: url(../img/prev-icon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  left: 0;
+  background: url(../img/prev-icon.png) no-repeat center center/contain;
+}
+
+.swiper-button-next {
+  background: url(../img/next-icon.png) no-repeat center center/contain;
 }
 
 .case-study__button {

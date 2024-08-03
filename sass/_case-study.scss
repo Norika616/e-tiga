@@ -15,6 +15,7 @@
 }
 
 .case-study__swiper {
+  padding-left: 8px;
   padding-bottom: calc(30px + 12px);
 }
 
@@ -22,6 +23,10 @@
 }
 
 .case-study__card {
+  overflow: hidden;
+  border-radius: 4px;
+  filter: drop-shadow(5px 7px 34px #f1f1f1);
+  width: 320px !important;
 }
 
 .case-study__image {
@@ -83,20 +88,24 @@
 }
 
 // 前へ・次へボタンのカスタマイズ
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
+.swiper-button-prev,
+.swiper-button-next {
   width: 44px;
   height: 44px;
+
+  //   デフォルトのアイコンを非表示
+  &::after {
+    display: none;
+  }
 }
 
 .swiper-button-prev {
-  background-image: url(../img/prev-icon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  left: 0;
+  background: url(../img/prev-icon.png) no-repeat center center / contain;
 }
 
 .swiper-button-next {
+  background: url(../img/next-icon.png) no-repeat center center / contain;
 }
 
 .swiper-scrollbar {
