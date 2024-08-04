@@ -12,10 +12,22 @@
   background: white;
 }
 
-// ボタン
-.button-group1 {
+// 共通スタイル
+.button-group1,
+.button-group2 {
   display: inline-block;
+  text-align: center;
+
+  // マウスホバー時の動き
+  transition: opacity 0.5s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.button-group1 {
   box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
   letter-spacing: 3px;
   font-weight: 700;
   color: var.$color-white-light;
@@ -29,9 +41,9 @@
 
 // secondaryの背景色はcvの背景色と同じ
 .button-secondary {
-  padding: calc(9px - 2px) calc(54px - 2px);
   border-radius: 50px;
   border: 2px solid #fff;
+  padding: calc(9px - 2px) calc(54px - 2px);
 }
 
 .button-group2 {
@@ -42,35 +54,24 @@
 }
 
 .button-small {
-  font-size: 16px;
+  padding: calc(5px - 1px) calc(24px - 1px);
   font-weight: 700;
   letter-spacing: 3px;
-  padding: calc(5px - 1px) calc(24px - 1px);
   box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
 }
 
 .button-medium {
+  padding: calc(8px - 1px) calc(44px - 1px);
   font-size: 14px;
   font-weight: 500;
-  padding: calc(8px - 1px) calc(44px - 1px);
   box-shadow: 5px 7px 34px 0px #f1f1f1;
 }
 
 .button-large {
-  font-size: 16px;
+  padding: calc(9px - 1px) calc(54px - 1px);
   font-weight: 700;
   letter-spacing: 3px;
-  padding: calc(9px - 1px) calc(54px - 1px);
   box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
-}
-
-// ボタンホバー時
-.button-group1,
-.button-group2 {
-  transition: opacity 0.5s;
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
 // 見出し

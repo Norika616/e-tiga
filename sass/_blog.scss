@@ -25,7 +25,11 @@
 
 .blog__image {
   position: relative;
-  width: 330px;
+  max-width: 330px;
+  margin-inline: auto;
+  img {
+    width: 330px;
+  }
 }
 
 .blog__tag {

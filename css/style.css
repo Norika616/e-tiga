@@ -33,10 +33,23 @@ img {
   background: white;
 }
 
-.button-group1 {
+.button-group1,
+.button-group2 {
   display: inline-block;
+  text-align: center;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.button-group1:hover,
+.button-group2:hover {
+  opacity: 0.7;
+}
+
+.button-group1 {
   -webkit-box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   letter-spacing: 3px;
   font-weight: 700;
   color: #f6f7f7;
@@ -50,9 +63,9 @@ img {
 }
 
 .button-secondary {
-  padding: 7px 52px;
   border-radius: 50px;
   border: 2px solid #fff;
+  padding: 7px 52px;
 }
 
 .button-group2 {
@@ -63,39 +76,27 @@ img {
 }
 
 .button-small {
-  font-size: 16px;
+  padding: 4px 23px;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 4px 23px;
   -webkit-box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
 }
 
 .button-medium {
+  padding: 7px 43px;
   font-size: 14px;
   font-weight: 500;
-  padding: 7px 43px;
   -webkit-box-shadow: 5px 7px 34px 0px #f1f1f1;
           box-shadow: 5px 7px 34px 0px #f1f1f1;
 }
 
 .button-large {
-  font-size: 16px;
+  padding: 8px 53px;
   font-weight: 700;
   letter-spacing: 3px;
-  padding: 8px 53px;
   -webkit-box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 4px 3px 26px 0px rgba(0, 0, 0, 0.16);
-}
-
-.button-group1,
-.button-group2 {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.button-group1:hover,
-.button-group2:hover {
-  opacity: 0.7;
 }
 
 .heading1 {
@@ -325,7 +326,7 @@ img {
 
 .first-view__button {
   margin-top: 30px;
-  padding-bottom: 3px;
+  text-align: center;
 }
 
 .news {
@@ -474,7 +475,6 @@ img {
 
 .concept__button {
   margin-top: 30px;
-  padding: 4px 3px;
   text-align: center;
 }
 
@@ -588,7 +588,6 @@ img {
 .case-study__button {
   margin-top: 30px;
   text-align: center;
-  padding-block: 4px;
 }
 
 .company__inner {
@@ -865,8 +864,6 @@ img {
 
 .price-card__button {
   margin-top: 30px;
-  padding-top: 4px;
-  padding-bottom: 3px;
   text-align: center;
 }
 
@@ -916,6 +913,10 @@ img {
 
 .blog__image {
   position: relative;
+  max-width: 330px;
+  margin-inline: auto;
+}
+.blog__image img {
   width: 330px;
 }
 
@@ -1044,8 +1045,6 @@ img {
 .seminar-card__button {
   margin-top: 22px;
   text-align: right;
-  padding-top: 5px;
-  padding-bottom: 7px;
 }
 
 .seminar__button {
