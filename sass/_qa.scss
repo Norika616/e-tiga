@@ -1,15 +1,29 @@
+@use "breakpoints" as bp;
+
 .qa {
   background: #f4fbff;
+
+  @include bp.mq(md) {
+    padding-block:100px 120px;
+  }
 }
 
 .qa__inner {
   padding-inline: 15px;
+
+  @include bp.mq(md) {
+    padding-inline:240px;
+  }
 }
 
 .qa__boxes {
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @include bp.mq(md) {
+    gap: 20px;
+  }
 }
 
 .qa__box {
@@ -43,6 +57,11 @@
   padding-right: 10px;
   padding-block: 10px;
   background: #ffffff;
+
+  @include bp.mq(md) {
+    padding-block:12px;
+    padding-right: 14px;
+  }
 }
 
 .qa-box__head-icon {

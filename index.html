@@ -43,12 +43,17 @@
             /></a>
           </h1>
           <!-- pc -->
-          <nav class="header__nav" aria-label="ナビゲーションメニュー">
-            <a href="#concept" class="header__link">e-tigaとは</a>
-            <a href="#cta" class="header__link">ご利用の流れ</a>
-            <a href="#price" class="header__link">プラン</a>
-            <a href="#company" class="header__link">運営会社</a>
-          </nav>
+          <div class="header__menu--list">
+            <nav class="header__nav" aria-label="ナビゲーションメニュー">
+              <a href="#concept" class="header__link">e-tigaとは</a>
+              <a href="#cta" class="header__link">ご利用の流れ</a>
+              <a href="#price" class="header__link">プラン</a>
+              <a href="#company" class="header__link">運営会社</a>
+            </nav>
+            <div class="header__button">
+              <a href="#" class="button-group1 button-primary">無料で登録</a>
+            </div>
+          </div>
           <!-- sp -->
           <button
             id="js-drawer-icon"
@@ -89,9 +94,13 @@
           <div class="first-view__image">
             <picture
               ><source
-                media="(min-width:768px )"
+                media="(min-width:768px)"
                 srcset="./img/first-view.png" />
-              <img src="./img/first-view.png" alt="" width="398" height="285"
+              <img
+                src="./img/sp/first-view-sp.png"
+                alt=""
+                width="398"
+                height="285"
             /></picture>
           </div>
           <div class="first-view__content">
@@ -233,7 +242,7 @@
     <section class="case-study section">
       <div class="case-study__inner">
         <div class="case-study__heading">
-          <h3 class="heading2">
+          <h3 class="heading2 is--case-study">
             <span class="heading-en">CASESTUDY</span>
             <span class="heading-ja">お客様の声</span>
           </h3>
@@ -323,7 +332,7 @@
     <section id="price" class="price section">
       <div class="price__inner">
         <div class="price__head">
-          <h3 class="heading2">
+          <h3 class="heading2 is--price">
             <span class="heading-en">PRICE</span>
             <span class="heading-ja">料金</span>
           </h3>
@@ -453,7 +462,7 @@
     <section class="company section">
       <div class="company__inner">
         <div class="company__heading">
-          <h3 class="heading2">
+          <h3 class="heading2 is--company">
             <span class="heading-en">COMPANY</span>
             <span class="heading-ja">会社概要</span>
           </h3>
@@ -581,7 +590,7 @@
     <section class="blog section">
       <div class="blog__inner">
         <div class="blog__head">
-          <h3 class="heading2">
+          <h3 class="heading2 is--blog">
             <span class="heading-en">BLOG</span>
             <span class="heading-ja">ブログ</span>
           </h3>
@@ -704,7 +713,7 @@
     <section class="seminar section">
       <div class="seminar__inner">
         <div class="seminar__head">
-          <h3 class="heading2">
+          <h3 class="heading2 is--seminar">
             <span class="heading-en">SEMINAR</span>
             <span class="heading-ja">セミナー</span>
           </h3>
@@ -821,7 +830,7 @@
     <section class="qa section">
       <div class="qa__inner">
         <div class="qa__head">
-          <h3 class="heading1">NEWS<span class="heading-bar"></span></h3>
+          <h3 class="heading1">Q&A<span class="heading-bar"></span></h3>
         </div>
         <div class="qa__boxes content">
           <details open class="qa__box qa-box js-details">
@@ -905,18 +914,20 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__access">
-          <div class="footer__logo">
-            <img
-              src="./img/footer-logo.png"
-              alt="e-tiga"
-              width="160"
-              height="40"
-            />
-          </div>
-          <div class="footer__address">
-            <p class="address">住所：東京都〇〇区〇〇　〇〇ビル4階</p>
-            <p class="phone__number">TEL：0000-00-0000</p>
-            <p class="phone__number">FAX：0000-00-0000</p>
+          <div class="footer__main">
+            <div class="footer__logo">
+              <img
+                src="./img/footer-logo.png"
+                alt="e-tiga"
+                width="160"
+                height="40"
+              />
+            </div>
+            <div class="footer__address">
+              <p class="address">住所：東京都〇〇区〇〇　〇〇ビル4階</p>
+              <p class="phone__number">TEL：0000-00-0000</p>
+              <p class="phone__number">FAX：0000-00-0000</p>
+            </div>
           </div>
           <div class="footer__menu--box">
             <nav class="footer__menu">
@@ -949,9 +960,9 @@
             </nav>
           </div>
         </div>
-        <div class="footer__copyright">
-          Copyright © 2023 デイトラ All rights reserved.
-        </div>
+      </div>
+      <div class="footer__copyright">
+        Copyright © 2023 デイトラ All rights reserved.
       </div>
     </footer>
     <!-- /footer -->

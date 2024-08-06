@@ -1,6 +1,12 @@
+@use "breakpoints" as bp;
+
 .first-view {
   background: linear-gradient(180deg, #eaf4f7 0%, #fff 100%);
   padding-block: 20px 80px;
+
+  @include bp.mq(md) {
+    padding-block: 30px 50px;
+  }
 }
 
 .first-view__inner {
@@ -10,21 +16,49 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+
+  @include bp.mq(md) {
+    padding-inline: 80px;
+    display: grid;
+    grid-template-areas: "bottom top";
+    grid-template-columns: 1fr 650px;
+    gap: 102px;
+  }
 }
 
 .first-view__image {
+  @include bp.mq(md) {
+    grid-area: top;
+  }
   img {
     width: 398px;
+
+    @include bp.mq(md) {
+      width: 650px;
+    }
   }
 }
 
 .first-view__content {
   text-align: center;
+
+  @include bp.mq(md) {
+    grid-area: bottom;
+    text-align: left;
+  }
 }
 
 .first-view__logo {
   margin-inline: auto;
-  width: 250px;
+  max-width: 250px;
+
+  @include bp.mq(md) {
+    margin-inline: 0;
+  }
+
+  img {
+    width: 250px;
+  }
 }
 
 .first-view__lead {
@@ -32,6 +66,10 @@
   color: #2b2b2b;
   font-size: clamp(1.25rem, 1.062rem + 0.7vw, 1.625rem);
   font-weight: 700;
+
+  @include bp.mq(md) {
+    margin-top: 24px;
+  }
 }
 
 .first-view__text {
@@ -44,4 +82,8 @@
 .first-view__button {
   margin-top: 30px;
   text-align: center;
+
+  @include bp.mq(md) {
+    text-align: left;
+  }
 }

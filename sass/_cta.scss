@@ -1,6 +1,11 @@
+@use "breakpoints" as bp;
 .cta {
   background: linear-gradient(90deg, #2390dc 0%, #2bc8c8 100%);
   text-align: center;
+
+  @include bp.mq(md) {
+    padding-block: 80px;
+  }
 }
 
 .cta__inner {

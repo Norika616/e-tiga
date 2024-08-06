@@ -1,3 +1,4 @@
+@use "breakpoints" as bp;
 @use "variable" as var;
 
 .wrap {
@@ -9,6 +10,11 @@
   height: 80px;
   padding-inline: 15px;
   padding-block: 24px;
+
+  @include bp.mq(md) {
+    padding-inline: 40px;
+    padding-block: 20px;
+  }
 }
 
 .header__inner {
@@ -25,14 +31,42 @@
   }
 }
 
+.header__menu--list{
+  display: flex;
+  gap: 190px;
+}
+
 .header__nav {
   display: none;
+
+  @include bp.mq(md) {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+  }
 }
 
 .header__link {
+  color: #333333;
+  font-weight: 500;
+
+  &:hover {
+  }
+}
+
+.header__button{
+  display: none;
+
+  @include bp.mq(md) {
+    display: block;
+  }
 }
 
 .header__open {
+  @include bp.mq(md) {
+    display: none;
+  }
 }
 
 .drawer-icon {

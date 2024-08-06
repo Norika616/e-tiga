@@ -1,25 +1,46 @@
+@use "breakpoints" as bp;
 .price {
   background: #f4fbff;
+
+  @include bp.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .price__inner {
   padding-inline: 30px;
+
+  @include bp.mq(md) {
+    padding-inline: 160px;
+  }
 }
 
 .price__head {
 }
 
 .price__cards {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 30px;
-  place-content: center;
-  grid-template-columns: 300px;
+  max-width: 300px;
+  // 100% - innerのpadding-inline
+  margin-inline: auto;
+
+  @include bp.mq(md) {
+    margin-top: 40px;
+    max-width: 950px;
+    flex-direction: row;
+    margin-inline: unset;
+  }
 }
 
 .price__card {
 }
 
 .price-card {
+  width: 100%;
   border-radius: 10px;
   background: #ffffff;
   padding: 30px 20px;

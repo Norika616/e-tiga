@@ -1,11 +1,20 @@
+@use "breakpoints" as bp;
 @use "variable" as var;
 
 .news {
   background: #ffffff;
+
+  @include bp.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .news__inner {
   padding-inline: 15px;
+
+  @include bp.mq(md) {
+    padding-inline: 150px;
+  }
 }
 
 .news__heading {
@@ -14,6 +23,10 @@
 .news__cards {
   display: flex;
   flex-direction: column;
+
+  @include bp.mq(md) {
+    margin-top: 60px;
+  }
 }
 
 .news__card {
@@ -25,6 +38,13 @@
   gap: 9px;
   padding-block: 10px;
   border-bottom: 1px solid #e3e3e3;
+
+  @include bp.mq(md) {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    padding-block: 12px;
+  }
 }
 
 .news__meta {
@@ -37,10 +57,20 @@
   color: #111111;
   font-size: 15px;
   font-weight: 400;
+
+  @include bp.mq(md) {
+    font-size: 16px;
+  }
 }
 
 .news__pagination {
   margin-top: 46px;
+
+  @include bp.mq(md) {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .pagination {
@@ -96,4 +126,8 @@
 .news__button {
   margin-top: 30px;
   text-align: center;
+
+  @include bp.mq(md) {
+    margin-top: 0;
+  }
 }

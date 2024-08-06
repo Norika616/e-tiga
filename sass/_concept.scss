@@ -1,5 +1,11 @@
+@use "breakpoints" as bp;
+
 .concept {
   background: #f4fbff;
+
+  @include bp.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .concept__inner {
@@ -7,12 +13,24 @@
   display: grid;
   gap: 30px;
   grid-template-rows: 310px 1fr;
+
+  @include bp.mq(md) {
+    padding-inline: 150px;
+    gap: 80px;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: unset;
+  }
 }
 
 .concept__image {
   margin-inline: auto;
+
   img {
     width: 310px;
+
+    @include bp.mq(md) {
+      width: 450px;
+    }
   }
 }
 
@@ -23,6 +41,9 @@
   color: #228ddd;
   font-size: 24px;
   font-weight: 700;
+
+  // 24px ~ 26px
+  font-size: clamp(1.5rem, 1.437rem + 0.23vw, 1.625rem);
 }
 
 .concept__text {
@@ -36,4 +57,9 @@
 .concept__button {
   margin-top: 30px;
   text-align: center;
+
+  @include bp.mq(md) {
+    margin-top: 36px;
+    text-align: left;
+  }
 }

@@ -1,9 +1,19 @@
+@use "breakpoints" as bp;
+
 .blog {
   background: #ffffff;
+
+  @include bp.mq(md) {
+    padding-block: 100px;
+  }
 }
 
 .blog__inner {
   padding-inline: 30px 38px;
+
+  @include bp.mq(md) {
+    padding-inline: 48px;
+  }
 }
 
 .blog__head {
@@ -12,6 +22,15 @@
 .blog__cards {
   display: grid;
   gap: 16px;
+
+  @include bp.mq(md) {
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+
+  @include bp.mq(lg) {
+    margin-top: 40px;
+  }
 }
 
 .blog__card {
@@ -67,4 +86,8 @@
 .blog__button {
   margin-top: 46px;
   text-align: center;
+
+  @include bp.mq(md) {
+    margin-top: 60px;
+  }
 }
