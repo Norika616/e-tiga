@@ -209,11 +209,18 @@ img {
   width: 160px;
 }
 
-.header__menu--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 190px;
+@media screen and (min-width: 768px) {
+  .header__menu--list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5%;
+  }
+}
+@media (min-width: 1280px) {
+  .header__menu--list {
+    gap: 190px;
+  }
 }
 
 .header__nav {
@@ -355,6 +362,7 @@ img {
 
 .first-view__inner {
   padding-inline: 15px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +468,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .news__inner {
+    margin-inline: auto;
     padding-inline: 150px;
+    max-width: 1230px;
   }
 }
 
@@ -1303,7 +1313,6 @@ img {
 
 .seminar-card__content {
   display: grid;
-  grid-template-columns: 324px 1fr;
   gap: 30px;
 }
 
@@ -1593,18 +1602,11 @@ img {
 }
 
 .footer__logo {
+  max-width: 160px;
   margin-inline: auto;
 }
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    margin-inline: unset;
-  }
-}
-.footer__logo img {
-  width: 160px;
-}
-
 .footer__address {
+  margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

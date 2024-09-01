@@ -31,9 +31,15 @@
   }
 }
 
-.header__menu--list{
-  display: flex;
-  gap: 190px;
+.header__menu--list {
+  @include bp.mq(md) {
+    display: flex;
+    gap: 0.5%;
+  }
+
+  @media (min-width: 1280px) {
+    gap: 190px;
+  }
 }
 
 .header__nav {
@@ -55,7 +61,7 @@
   }
 }
 
-.header__button{
+.header__button {
   display: none;
 
   @include bp.mq(md) {

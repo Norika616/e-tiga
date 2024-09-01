@@ -37,18 +37,14 @@
 }
 
 .footer__logo {
+  max-width: 160px;
   margin-inline: auto;
-
-  @include bp.mq(md) {
-    margin-inline: unset;
-  }
-
   img {
-    width: 160px;
   }
 }
 
 .footer__address {
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 4px;
